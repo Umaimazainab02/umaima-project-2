@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="src/output.css" rel="stylesheet">
-    <title>Umaima aniimat-portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Umaima aniimate-portfolio</title>
 </head>
 
 <body>
@@ -33,37 +34,55 @@
                 Hire me
             </a>
         </div>
-
     </header>
+   
     <!-----body----->
-    <div class="flex flex-col md:flex-row lg:flex-row mt-3 ">
-        <img src="girl2.png" alt=""
-            class=" h-full md:h-70 lg:h-110 flex-1 md:max-w-lg lg:max-w-[400px]  rounded-2xl ml-3 md:ml-2 lg:ml-23 mr-3 md:mr-2 lg:mr-3 mt-3 md:mt-0 lg:mt-0">
-        <div class="mt-6 md:mt-0 lg:mt-0  mr-4 md:mr-14 lg:mr-20 ml-4 md:ml-2 lg:ml-6  p-10 lg:p-14 rounded-2xl flex flex-col flex-1 md:w-100 lg:w-auto  pt-7 justify-end  bg-[linear-gradient(980deg,_#FEDDA0_0%,_#F9F7DB_45%,_#F9F7DB_70%,_#F7DA70_100%)]"
-            id="colorchng">
-            <h1 class="text-xl md:text-3xl lg:text-4xl font-medium leading-tight">Hi there, I'm Umaima zainab!</h1>
-            <p class="pt-4 text-xs md:text-sm" id="textcolor">
+    <div class="flex flex-col md:flex-row lg:flex-row mt-3">
+
+    <div class="img-border ml-3 md:ml-2 lg:ml-23 mr-3 md:mr-2 lg:mr-3 mt-3 md:mt-0">
+        <img id="girl2" src="girl2.png" alt=""
+            class="h-full md:h-70 lg:h-110 flex-1 md:max-w-lg lg:max-w-[400px] rounded-2xl">
+    </div>
+
+    <div class="mt-6 md:mt-0 lg:mt-0 mr-4 md:mr-14 lg:mr-20 ml-4 md:ml-2 lg:ml-6 p-10 lg:p-14 rounded-2xl flex flex-col flex-1 md:w-100 lg:w-auto pt-7 justify-end bg-[linear-gradient(980deg,_#FEDDA0_0%,_#F9F7DB_45%,_#F9F7DB_70%,_#F7DA70_100%)]"
+        id="colorchng">
+
+        <h1 class="text-xl md:text-3xl lg:text-4xl font-medium leading-tight">
+            Hi there, I'm Umaima Zainab!
+        </h1>
                 I'm a passionate Front-End Developer with strong skills in HTML, CSS, Tailwind CSS, JavaScript, and
                 React. I enjoy creating modern, responsive, and user-friendly websites that provide a smooth user
                 experience. I'm always eager to learn new technologies, improve my skills, and build creative web
                 applications that solve real-world problems.</p>
         </div>
     </div>
+       
+    
+    
+    <!-----slide-------->
 
-
-    <!-------projects----->
+   <div class="overflow-hidden whitespace-nowrap py-6 my-12 border-y border-gray-200">
+    <div class="marquee text-2xl md:text-4xl lg:text-lg font-bold uppercase text-yellow-300/90">
+        <span>
+            FRONTEND DEVELOPER • JAVASCRIPT • TAILWIND CSS • REACT • UI DESIGN •
+            FRONTEND DEVELOPER • JAVASCRIPT • TAILWIND CSS • REACT • UI DESIGN •
+            FRONTEND DEVELOPER • JAVASCRIPT • TAILWIND CSS • REACT • UI DESIGN •
+        </span>
+    </div>
+</div>
+     <!-------projects----->
     <div class="max-w-7xl  px-4 md:px-8 lg:px-12 mt-12 mx-1 md:mx-4 lg:mx-12">
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             <!-- 1 -->
-            <div class="bg-gray-100 group relative rounded-xl p-6 lg:p-8 overflow-hidden transition duration-300 hover:scale-105"
+            <div class="bg-gray-100 group relative rounded-xl overflow-hidden transition duration-300 hover:scale-105"
                 id="project1">
 
-                <h1 class="text-xl font-medium">Js Website</h1>
-                <p class="text-gray-500">This month</p>
+                <h1 class="text-xl font-medium text-center">Js Website</h1>
+                <p class="text-gray-500 text-center">This month</p>
 
-                <img src="pic-1.png" alt="" class="mt-8 w-full transition duration-300 group-hover:scale-110">
+                <img src="pic2.png" alt="" class="mt-8 w-full transition duration-300 group-hover:scale-110">
 
                 <span onclick="window.open('https://umaimazainab02.github.io/js-portfolio-website/', '_blank')"
                     class="absolute right-5 top-5 cursor-pointer opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
@@ -75,13 +94,13 @@
 
             <!--  2 -->
 
-            <div class="bg-gray-100 group relative rounded-xl p-6 lg:p-8 overflow-hidden transition duration-300 hover:scale-105"
+            <div class="bg-gray-100 group relative rounded-xl  overflow-hidden transition duration-300 hover:scale-105"
                 id="project2">
 
-                <h1 class="text-xl font-medium">CS website</h1>
-                <p class="text-gray-500">This month</p>
+                <h1 class="text-xl font-medium text-center">CS website</h1>
+                <p class="text-gray-500 text-center">This month</p>
 
-                <img src="pic-2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
+                <img src="pic2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
 
                 <span onclick="window.open('https://umaimazainab02.github.io/umaima-portfolio/', '_blank')"
                     class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
@@ -91,29 +110,30 @@
             </div>
 
             <!-- 3 -->
-            <div class="bg-gray-100 group relative rounded-xl p-6 lg:p-8 overflow-hidden transition duration-300 hover:scale-105"
-                id="project3">
+        <div class="project-card">
+    <div class="bg-gray-100 group relative rounded-xl overflow-hidden transition duration-300 hover:scale-105"
+         id="project3">
 
-                <h1 class="text-xl font-medium">Login form</h1>
-                <p id="month3" class="text-gray-500">This month</p>
+        <h1 class="text-xl font-medium text-center">Login form</h1>
+        <p id="month3" class="text-gray-500 text-center">This month</p>
 
-                <img src="pic-3.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
+        <img src="pic2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
 
-                <span onclick="window.open('https://umaimazainab02.github.io/login-page-formvalidation/', '_blank')"
-                    class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
-                    <i id="name3" class="fa-solid fa-arrow-right-long"></i>
-                </span>
+        <span onclick="window.open('https://umaimazainab02.github.io/login-page-formvalidation/', '_blank')"
+            class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
+            <i id="name3" class="fa-solid fa-arrow-right-long"></i>
+        </span>
 
-            </div>
-
+    </div>
+</div>
             <!-- 4 -->
-            <div class="bg-gray-100 group relative rounded-xl p-6 lg:p-8 overflow-hidden transition duration-300 hover:scale-105"
+            <div class="bg-gray-100 group relative rounded-xl  overflow-hidden transition duration-300 hover:scale-105"
                 id="project4">
 
-                <h1 class="text-xl font-medium">Calculate result</h1>
-                <p id="month4" class="text-gray-500">This month</p>
+                <h1 class="text-xl font-medium text-center">Calculate result</h1>
+                <p id="month4" class="text-gray-500 text-center">This month</p>
 
-                <img src="pic4.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
+                <img src="pic2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110 ">
 
                 <span onclick="window.open('https://umaimazainab02.github.io/calculate-result/', '_blank')"
                     class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
@@ -123,13 +143,13 @@
             </div>
 
             <!-- 5 -->
-            <div class="bg-gray-100 group relative rounded-xl p-6 lg:p-8 overflow-hidden transition duration-300 hover:scale-105"
+            <div class="bg-gray-100 group relative rounded-xl  overflow-hidden transition duration-300 hover:scale-105"
                 id="project5">
 
-                <h1 class="text-xl font-medium">Tic Toe game</h1>
-                <p id="month5" class="text-gray-500">This month</p>
+                <h1 class="text-xl font-medium text-center">Tic Toe game</h1>
+                <p id="month5" class="text-gray-500 text-center">This month</p>
 
-                <img src="pic-5.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
+                <img src="pic2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
 
                 <span onclick="window.open('https://umaimazainab02.github.io/tic-tac-toe-game/', '_blank')"
                     class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
@@ -139,13 +159,13 @@
             </div>
 
             <!-- 6 -->
-            <div class="bg-gray-100 group relative rounded-xl p-6 lg:p-8 overflow-hidden transition duration-300 hover:scale-105"
+            <div class="bg-gray-100 group relative rounded-xl overflow-hidden transition duration-300 hover:scale-105"
                 id="project6">
 
-                <h1 class="text-xl font-medium">Tailwind portfolio</h1>
-                <p id="month6" class="text-gray-500">This month</p>
+                <h1 class="text-xl font-medium text-center">Tailwind portfolio</h1>
+                <p id="month6" class="text-gray-500 text-center">This month</p>
 
-                <img src="pic-6.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
+                <img src="pic2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
 
                 <span onclick="window.open('https://umaimazainab02.github.io/portfolio-website/', '_blank')"
                     class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
@@ -154,6 +174,101 @@
 
             </div>
 
+             <!-- 7 -->
+            <div class="bg-gray-100 group relative rounded-xl  overflow-hidden transition duration-300 hover:scale-105"
+                id="project7">
+
+                <h1 class="text-xl font-medium text-center">Tailwind portfolio</h1>
+                <p id="month7" class="text-gray-500 text-center">This month</p>
+
+                <img src="pic2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
+
+                <span onclick="window.open('https://umaimazainab02.github.io/portfolio-website/', '_blank')"
+                    class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
+                    <i id="name7" class="fa-solid fa-arrow-right-long"></i>
+                </span>
+
+            </div>
+
+             <!-- 8 -->
+            <div class="bg-gray-100 group relative rounded-xl  overflow-hidden transition duration-300 hover:scale-105"
+                id="project8">
+
+                <h1 class="text-xl font-medium text-center">Tailwind portfolio</h1>
+                <p id="month8" class="text-gray-500 text-center">This month</p>
+
+                <img src="pic2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
+
+                <span onclick="window.open('https://umaimazainab02.github.io/portfolio-website/', '_blank')"
+                    class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
+                    <i id="name8" class="fa-solid fa-arrow-right-long"></i>
+                </span>
+
+            </div>
+
+             <!-- 9 -->
+            <div class="bg-gray-100 group relative rounded-xl  overflow-hidden transition duration-300 hover:scale-105"
+                id="project9">
+
+                <h1 class="text-xl font-medium text-center">Tailwind portfolio</h1>
+                <p id="month9" class="text-gray-500 text-center">This month</p>
+
+                <img src="pic2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
+
+                <span onclick="window.open('https://umaimazainab02.github.io/portfolio-website/', '_blank')"
+                    class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
+                    <i id="name9" class="fa-solid fa-arrow-right-long"></i>
+                </span>
+
+            </div>
+
+             <!-- 10 -->
+            <div class="bg-gray-100 group relative rounded-xl  overflow-hidden transition duration-300 hover:scale-105"
+                id="project10">
+
+                <h1 class="text-xl font-medium text-center">Tailwind portfolio</h1>
+                <p id="month10" class="text-gray-500 text-center">This month</p>
+
+                <img src="pic2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
+
+                <span onclick="window.open('https://umaimazainab02.github.io/portfolio-website/', '_blank')"
+                    class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
+                    <i id="name10" class="fa-solid fa-arrow-right-long"></i>
+                </span>
+
+            </div>
+
+             <!-- 11 -->
+            <div class="bg-gray-100 group relative rounded-xl  overflow-hidden transition duration-300 hover:scale-105"
+                id="project11">
+
+                <h1 class="text-xl font-medium mt-8 text-center">Tailwind portfolio</h1>
+                <p id="month11" class="text-gray-500 text-center">This month</p>
+
+                <img src="pic2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
+
+                <span onclick="window.open('https://umaimazainab02.github.io/portfolio-website/', '_blank')"
+                    class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
+                    <i id="name11" class="fa-solid fa-arrow-right-long"></i>
+                </span>
+
+            </div>
+
+             <!-- 12 -->
+            <div class="bg-gray-100 group relative rounded-xl  overflow-hidden transition duration-300 hover:scale-105"
+                id="project12">
+
+                <h1 class="text-xl font-medium mt-5 text-center">Tailwind portfolio</h1>
+                <p id="month12" class="text-gray-500 text-center">This month</p>
+
+                <img src="pic2.png" alt="" class="mt-6 w-full transition duration-300 group-hover:scale-110">
+
+                <span onclick="window.open('https://umaimazainab02.github.io/portfolio-website/', '_blank')"
+                    class="absolute right-5 top-5 opacity-100 lg:opacity-0 lg:-translate-y-2 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 transition-all duration-300 text-2xl">
+                    <i id="name12" class="fa-solid fa-arrow-right-long"></i>
+                </span>
+
+            </div>
         </div>
 
     </div>
