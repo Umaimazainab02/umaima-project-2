@@ -88,3 +88,17 @@
   opacity: 1;
   filter: blur(30px);
 }
+
+
+@keyframes diagonalLineWave {
+  0%   { left: -100%; bottom: 5%;  transform: translateY(0); }
+  20%  { left: -60%;  bottom: 25%; transform: translateY(-14px); }
+  40%  { left: -20%;  bottom: 45%; transform: translateY(0); }
+  60%  { left: 20%;   bottom: 65%; transform: translateY(-14px); }
+  80%  { left: 60%;   bottom: 85%; transform: translateY(0); }
+  100% { left: 100%;  bottom: 95%; transform: translateY(-14px); }
+}
+
+.animate-line-wave {
+  animation: diagonalLineWave 20s linear infinite;
+}
