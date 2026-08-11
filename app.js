@@ -17,12 +17,7 @@ sun1.addEventListener("click", function () {
     document.getElementById("project4").style.background = "#18181B";
     document.getElementById("project5").style.background = "#18181B";
     document.getElementById("project6").style.background = "#18181B";
-    document.getElementById("name1").style.color = "black";
-    document.getElementById("name2").style.color = "black";
-    document.getElementById("name3").style.color = "black";
-    document.getElementById("name4").style.color = "black";
-    document.getElementById("name5").style.color = "black";
-    document.getElementById("name6").style.color = "black";
+
     document.getElementById("form1").style.background = "purple";
     document.getElementById("form2").style.color = "white";
     document.getElementById("form3").style.color = "white";
@@ -33,6 +28,7 @@ sun1.addEventListener("click", function () {
     document.getElementById("email").style.background = "rgba(0, 0, 0, 0.4)";
     document.getElementById("message").style.background = "rgba(0, 0, 0, 0.4)";
     document.getElementById("form7").style.background = "purple";
+
 
 });
 
@@ -50,12 +46,7 @@ moon1.addEventListener("click", function () {
     document.getElementById("project4").style.background = "#F3F4F6";
     document.getElementById("project5").style.background = "#F3F4F6";
     document.getElementById("project6").style.background = "#F3F4F6";
-    document.getElementById("name1").style.color = "black";
-    document.getElementById("name2").style.color = "black";
-    document.getElementById("name3").style.color = "black";
-    document.getElementById("name4").style.color = "black";
-    document.getElementById("name5").style.color = "black";
-    document.getElementById("name6").style.color = "black";
+
     document.getElementById("form1").style.background =
         "linear-gradient(135deg, #F8CEED 0%, #EFDFFF 45%, #EFDFFF 70%, #DDDDFF 100%)";
     document.getElementById("form2").style.color = "black";
@@ -67,7 +58,6 @@ moon1.addEventListener("click", function () {
     document.getElementById("email").style.background = "white";
     document.getElementById("message").style.background = "white";
     document.getElementById("form7").style.background = "purple";
-
 })
 
 let name1 = document.getElementById("name");
@@ -84,7 +74,7 @@ submit.addEventListener("submit", function (e) {
     console.log("form submitted successfully!");
 
     submit.reset();
-    
+
 })
 
 
@@ -105,4 +95,3 @@ submit.addEventListener("submit", function (e) {
 
 
 
-    
