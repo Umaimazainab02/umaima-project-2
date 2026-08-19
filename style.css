@@ -81,7 +81,7 @@
 }
 
 .project-card:hover::before {
-  transform: rotate(-90deg) scaleX(1.40) scaleY(0.80);
+  transform: rotate(-90deg) scaleX(1.30) scaleY(0.84);
 }
 
 .project-card:hover::after {
