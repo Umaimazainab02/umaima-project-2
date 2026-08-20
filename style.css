@@ -12,40 +12,6 @@
         transform: translateX(-50%);
     }
 }
-.img-border {
-    position: relative;
-    display: inline-block;
-    border-radius: 16px;
-    padding: 3px; /* border thickness */
-    overflow: hidden;
-}
-
-.img-border::before {
-    content: "";
-    position: absolute;
-    inset: -150%;
-    background: conic-gradient(
-        transparent,
-        pink,
-        transparent,
-        transparent
-    );
-    animation: rotate 2s linear infinite;
-}
-
-.img-border img {
-    display: block;
-    position: relative;
-    z-index: 1;
-    border-radius: 16px;
-}
-
-@keyframes rotate {
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 
 
 .project-card {
@@ -62,7 +28,7 @@
   width: calc(100% + 10px);
   height: calc(100% + 10px);
   border-radius: 14px;
-  background: linear-gradient(-45deg, #F7DA70 0%, #FEDDA0 50%, #C084FC 100%);
+  background: linear-gradient(-45deg, #F7DA70 0%, #047857 50%, #C084FC 100%);
   z-index: -10;
   pointer-events: none;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -73,7 +39,7 @@
   z-index: -1;
   position: absolute;
   inset: 0;
-  background: linear-gradient(-45deg, #F7DA70 0%, #C084FC 100%);
+  background: linear-gradient(-45deg, #F7DA70 0%, #047857 100%);
   transform: translate3d(0, 0, 0) scale(0.95);
   filter: blur(20px);
   opacity: 0;
@@ -128,4 +94,113 @@
 .fade-right.show {
     opacity: 1;
     transform: translateX(0);
+}/* ===== Orbit Arrows + Scattered Stars (around profile image) ===== */
+
+.img-border {
+  position: relative; /* zaroori hai taake stars/arrows sahi jagah position hon */
 }
+
+.pic-wrap {
+  position: relative;
+}
+
+/* rotating ring that carries the arrows */
+.arrow-ring {
+  position: absolute;
+  inset: -30px;
+  animation: spin 14s linear infinite;
+  pointer-events: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  transform-origin: 0 0;
+}
+
+.arrow:nth-child(1) { transform: rotate(0deg)   translate(150px, -11px); }
+.arrow:nth-child(2) { transform: rotate(72deg)  translate(150px, -11px); }
+.arrow:nth-child(3) { transform: rotate(144deg) translate(150px, -11px); }
+.arrow:nth-child(4) { transform: rotate(216deg) translate(150px, -11px); }
+.arrow:nth-child(5) { transform: rotate(288deg) translate(150px, -11px); }
+
+.arrow svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 5px #047857);
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* stars scattered randomly around the image - sizes/positions/timings sab alag rakhe hain taake symmetric na lagein */
+.star {
+  position: absolute;
+  background: #047857;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  animation: twinkle ease-in-out infinite;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.s1 { width: 11px; height: 11px; top: 3%;  left: 8%;  animation-duration: 2.3s; }
+.s2 { width: 6px;  height: 6px;  top: 14%; left: 92%; animation-duration: 3.1s; animation-delay: .4s; }
+.s3 { width: 15px; height: 15px; top: 66%; left: 2%;  animation-duration: 2.7s; animation-delay: .9s; }
+.s4 { width: 8px;  height: 8px;  top: 88%; left: 84%; animation-duration: 2s;   animation-delay: .2s; }
+.s5 { width: 5px;  height: 5px;  top: 48%; left: -5%; animation-duration: 3.4s; animation-delay: 1.1s; }
+.s6 { width: 9px;  height: 9px;  top: 1%;  left: 70%; animation-duration: 2.6s; animation-delay: .6s; }
+.s7 { width: 13px; height: 13px; top: 95%; left: 36%; animation-duration: 3s;   animation-delay: .3s; }
+.s8 { width: 6px;  height: 6px;  top: 55%; left: 100%; animation-duration: 2.4s; animation-delay: .8s; }
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8) rotate(0deg); }
+  50%      { opacity: 1;   transform: scale(1.15) rotate(15deg); }
+}
+
+/* mobile pe arrows zyada bahar na niklein isliye chota radius */
+@media (max-width: 767px) {
+
+  .arrow-ring {
+    inset: -10px;
+  }
+
+  .arrow {
+    width: 18px;
+    height: 18px;
+  }
+
+  .arrow:nth-child(1) {
+    transform: rotate(0deg) translate(95px, -9px);
+  }
+
+  .arrow:nth-child(2) {
+    transform: rotate(72deg) translate(95px, -9px);
+  }
+
+  .arrow:nth-child(3) {
+    transform: rotate(144deg) translate(95px, -9px);
+  }
+
+  .arrow:nth-child(4) {
+    transform: rotate(216deg) translate(95px, -9px);
+  }
+
+  .arrow:nth-child(5) {
+    transform: rotate(288deg) translate(95px, -9px);
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
