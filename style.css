@@ -102,3 +102,30 @@
 .animate-line-wave {
   animation: diagonalLineWave 20s linear infinite;
 }
+.typing-cursor {
+    animation: blink 0.8s infinite;
+    font-weight: 300;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-left.show,
+.fade-right.show {
+    opacity: 1;
+    transform: translateX(0);
+}
