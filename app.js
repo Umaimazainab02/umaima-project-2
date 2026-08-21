@@ -16,6 +16,7 @@ sun1.addEventListener("click", function () {
     document.getElementById("project4").style.background = "#18181B";
     document.getElementById("project5").style.background = "#18181B";
     document.getElementById("project6").style.background = "#18181B";
+    document.getElementById("hire").style.background = "#059669";
 
     document.getElementById("form2").style.color = "white";
     document.getElementById("form3").style.color = "white";
@@ -35,7 +36,6 @@ moon1.addEventListener("click", function () {
     document.body.classList.remove("from-zinc-900", "via-black", "to-zinc-900", "text-white");
     document.body.classList.add("bg-gradient-to-b", "from-emerald-50", "via-white", "to-teal-50");
 
-    starfield.classList.add("hidden");
 
     document.getElementById("project1").style.background = "#F3F4F6";
     document.getElementById("project2").style.background = "#F3F4F6";
@@ -43,7 +43,8 @@ moon1.addEventListener("click", function () {
     document.getElementById("project4").style.background = "#F3F4F6";
     document.getElementById("project5").style.background = "#F3F4F6";
     document.getElementById("project6").style.background = "#F3F4F6";
-
+  document.getElementById("hire").style.background =
+        "linear-gradient(to left, #ecfdf5, #e9d5ff, #ccfbf1)"; 
     document.getElementById("form2").style.color = "black";
     document.getElementById("form3").style.color = "black";
     document.getElementById("form4").style.color = "black";
