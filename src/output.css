@@ -385,14 +385,23 @@
   .h-46 {
     height: calc(var(--spacing) * 46);
   }
-  .h-70 {
-    height: calc(var(--spacing) * 70);
+  .h-76 {
+    height: calc(var(--spacing) * 76);
   }
   .h-94 {
     height: calc(var(--spacing) * 94);
   }
   .h-98 {
     height: calc(var(--spacing) * 98);
+  }
+  .h-\[300px\] {
+    height: 300px;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .min-h-\[32px\] {
+    min-height: 32px;
   }
   .min-h-screen {
     min-height: 100vh;
@@ -620,6 +629,9 @@
   }
   .bg-clip-text {
     background-clip: text;
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -974,6 +986,9 @@
     }
     .md\:h-90 {
       height: calc(var(--spacing) * 90);
+    }
+    .md\:h-\[360px\] {
+      height: 360px;
     }
     .md\:w-1\/2 {
       width: calc(1 / 2 * 100%);
