@@ -217,3 +217,13 @@ body {
     opacity: 0.6;        /* thora aur subtle */
   }
 }
+@media (hover: hover) and (pointer: fine) {
+  .project-card:hover::before {
+    transform: rotate(-90deg) scaleX(1.30) scaleY(0.84);
+  }
+
+  .project-card:hover::after {
+    opacity: 1;
+    filter: blur(30px);
+  }
+}
