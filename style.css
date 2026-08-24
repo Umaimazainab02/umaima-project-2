@@ -203,27 +203,3 @@ body {
   min-height: 100%;
   overflow-x: hidden;
 }
-
-@media (max-width: 640px) {
-  .project-card::before {
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    border-radius: 12px;
-  }
-
-  .project-card::after {
-    filter: blur(8px);   /* 20px se kam kiya */
-    opacity: 0.6;        /* thora aur subtle */
-  }
-}
-@media (hover: hover) and (pointer: fine) {
-  .project-card:hover::before {
-    transform: rotate(-90deg) scaleX(1.30) scaleY(0.84);
-  }
-
-  .project-card:hover::after {
-    opacity: 1;
-    filter: blur(30px);
-  }
-}
