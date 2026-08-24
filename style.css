@@ -203,3 +203,11 @@ body {
   min-height: 100%;
   overflow-x: hidden;
 }
+.project-card h1,
+.project-card > div > .flex.items-center.justify-center {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3;
+}
